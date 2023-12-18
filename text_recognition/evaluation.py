@@ -34,4 +34,5 @@ def evaluate_model(model: OCRModel, dataset_path: Path, verbose=0):
                   f'"{predicted_text}"\n'
                   f'Ground truth:\n\n'
                   f'"{file_info["text"]}"\n')
+
     return np.mean(accuracies)
