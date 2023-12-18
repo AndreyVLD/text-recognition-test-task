@@ -20,7 +20,7 @@ def evaluate_model(model: OCRModel, dataset_path: Path, verbose=0):
      2 to print both accuracy and predicted/ground truth text. Default is 0.
     :return: The mean accuracy of the model.
     """
-    with open(dataset_path / 'info.json') as f:
+    with (dataset_path / 'info.json').open(encoding='utf-8') as f:
         dataset_info = json.load(f)
     accuracies = []
     for file_info in dataset_info:
