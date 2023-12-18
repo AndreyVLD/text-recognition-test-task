@@ -1,5 +1,3 @@
-## Please, fork this repo first!
-
 # Instructions
 
 - Your goal is to implement a model using any python library
@@ -17,9 +15,3 @@ and the quality of your code.
 
   -  To measure your accuracy I will download your fork and 
 run your model on the secret version of dataset (with another, but conceptually similar screenshots).
-
-
-Good luck! And feel free to text me via email if you have any questions:
-
-[aleksandr.fedotov@jetbrains.com](aleksandr.fedotov@jetbrains.com)
-
