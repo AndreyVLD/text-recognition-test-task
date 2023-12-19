@@ -4,6 +4,7 @@ import numpy as np
 import pytesseract
 
 # Set the path to the tesseract executable, if necessary, change it to your path
+# Follow this format: pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>'
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 
