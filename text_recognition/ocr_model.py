@@ -2,10 +2,17 @@ from pathlib import Path
 import cv2
 import numpy as np
 import pytesseract
+import os
+
+# Try to get the Tesseract path from the environment variable
+tesseract_path = os.getenv('TESSERACT_PATH')
 
 # Set the path to the tesseract executable, if necessary, change it to your path
 # Follow this format: pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>'
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+if not tesseract_path:
+    tesseract_path = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+pytesseract.pytesseract.tesseract_cmd = tesseract_path
 
 
 class OCRModel:
