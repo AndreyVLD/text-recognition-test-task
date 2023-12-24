@@ -18,7 +18,12 @@ Download binary from https://github.com/UB-Mannheim/tesseract/wiki. then add \
 your tesseract binary path. 
 
 ## 3. Download the chinese language data
-For the Simplified Chinese language data, download the train data from 
+For the chinese language data to work, you will need to move the chi_sim.traineddata file to the tessdata folder in
+your Tesseract-OCR directory.
+Chi_sim.traineddata is located in ```data/datatrain/chi_sim.traineddata``` in this
+project.
+
+Or alternatively, download the train data from 
 https://github.com/tesseract-ocr/tessdata/blob/main/chi_sim.traineddata and place this file in the tessdata folder 
 in your Tesseract-OCR directory.
 
