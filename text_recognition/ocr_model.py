@@ -31,11 +31,15 @@ class OCRModel:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         # Apply thresholding
-        img = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
+        img = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
 
         # Apply Gaussian blur and equalize histogram
         img = cv2.GaussianBlur(img, (3, 3), 0)
         img = cv2.equalizeHist(img)
+
+        # Show the preprocessed image
+        # cv2.imshow('img', img)
+        # cv2.waitKey(0)
 
         return img
 
